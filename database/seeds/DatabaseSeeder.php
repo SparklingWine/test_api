@@ -18,10 +18,7 @@ class DatabaseSeeder extends Seeder
         $faker = Faker\Factory::create();
 
         /* Сгенерируем данные для таблицы services */
-
-        $timeStamp = 1487082894; // 14/02/2017 14:34:54 GMT
         for($i = 0; $i < 100; $i++){
-            $timeStamp+=mt_rand(30000, 50000);
             $fakerName = $faker->unique()->word;
             Service::updateOrCreate(
                 [
