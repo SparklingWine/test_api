@@ -41,6 +41,11 @@
                         "sortDescending": ": активировать для сортировки столбца по убыванию"
                     }
 
+                },
+                "initComplete": function( settings, json ) {
+                    //$('div.loading').remove();
+                    $('.col-sm-5:first').addClass('col-sm-4').removeClass('col-sm-5');
+                    $('.col-sm-7:first').addClass('col-sm-8').removeClass('col-sm-7');
                 }
             });
         });
@@ -98,5 +103,3 @@
 </div>
 </body>
 </html>
-
-
