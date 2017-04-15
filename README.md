@@ -51,9 +51,9 @@
 
 Возможно, будет удобнее тестировать приложение, используя curl вот таким образом:
 
-    curl --verbose --data-urlencode "data@$1" "$URL" -o "response.html"
+ - curl --verbose --data-urlencode "data@$1" "$URL" -o "response.html"
 
-В этом случае создаётся файл response.html, где можно посмотреть ответы сервера (там могут быть разные варианты, это описано в README.md на GitHub.
+В этом случае создаётся файл response.html, где можно посмотреть ответы сервера.
    
 ## License
 
