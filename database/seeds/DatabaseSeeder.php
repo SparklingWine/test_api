@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
             $userName = $faker->unique()->name;
             $internalIp = $faker->localIpv4;
             $timeStamp+=mt_rand(30000, 50000);
-            $appVersion = $faker->regexify('[0-1]\.[0-9]\.[0-3]');
+            $appVersion = $faker->regexify('[0-1]\.[0-9]\.[1-9]');
             $serviceIds = $faker->unique()->randomElements(array_keys($services), $count = mt_rand(1, 10));
 
             LogEntry::updateOrCreate(
